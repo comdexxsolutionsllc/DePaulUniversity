@@ -1,0 +1,6 @@
+package project.data;
+
+public interface Agent {
+	public void run();
+
+}

@@ -1,0 +1,24 @@
+/src
+	/com.joshuasabbott.general
+	+ Node.java (Class)
+
+	/com.joshuasabbott.interfaces
+	+ SearchInterface.java (Interface)
+
+	/com.joshuasabbott.main
+	+ Main.java (Class)
+
+	/com.joshuasabbott.search
+	+ AStarSearchManhattan.java (Class implements SearchInterface)
+	+ AStarSearchNumWrongTilePos.java (Class implements SearchInterface)
+	+ BreadthFirstSearch.java (Class implements SearchInterface)
+	+ DepthFirstSearch.java (Class implements SearchInterface)
+	+ GreedyBestFirstSearch.java (Class implements SearchInterface)
+	+ IterativeDeepeningSearch.java (Class implements SearchInterface)
+
+	/com.joshuasabbott.ui
+	+ GraphicalUI.java (Class)
+	+ TextUI.java (Class, Optional)
+
+
+

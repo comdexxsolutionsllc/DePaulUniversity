@@ -1,0 +1,74 @@
+
+10/20/2013 - 2 hours
+
+	Design: None
+	Coding & Debugging: Set up Car, Road, and TrafficLayout classes as well as vehicle interface.  Wrote initial unit tests for created classes.
+	Bugs:
+
+10/25/2013 - 2 hours
+	Design: None
+	Coding & Debugging: Decided to eliminate vehicle interface, at least temporarily to simplify the implementation of V0.0.  Changed the fields inside of Car class based on suggestions in lecture example.  Added get/set methods for all parameters.  
+	Read through example code from lectures.  Added Agent and CarAcceptor interfaces, altered code to mimic example from lecture notes.
+	Bugs:
+
+10/26/13 - 3.25 hours
+	Design: 
+
+	Coding & Debugging: Added velocity algorithm for Car.  Read about Time Simulation.  Added User Interface and basic skeleton of menus.  Started Time Server.  Created property bag class for default values.  Added Timeserver code from lecture.
+	
+	Bugs:
+
+10/27/13 -  3.25 hour
+	Design:
+	Coding & Debugging: Added toString method to property bag, wrote methods for print properties & set new timestep. Start writing CarTEST and RoadTEST.
+	Bugs: nullPointer exceptions in print values (needed to initialize new ProperyBag()) and set new time step (process form function was not written for UI).  Road.accept throwing errors when adding first car.
+
+
+11/01/13  2.75 hours
+
+	Coding & Debugging: Set up Visualization code & Model.  Got one car to run from start to end of one code segment.  Minor debugging of model.
+	Bugs: Swing Animator is not drawing roads as long as they should be.  It's pulling length from MP class.  Need to either switch visualization to pull values from Property Bag accessors or make Property Bag a public property class.  If values can be changed from their defaults during run time, this is probably cleaner.
+
+11/02/13  
+
+	Coding & Debugging: 1.75 hours - Refined RoadTEST & CarTEST and rewrote how road lengths & variable car properties are determined.  Added grid size setter to control class.  Started Implementing Light.  Normalized Road visualization.
+	Bugs: 1.25 hours - Sometimes car will not move at all when no obstacles are in front of it.  Resolved. (Added test if distance to obstacle == infinity, return max velocity * time).  Road visualization was not proportional to actual size of road so that car seem to go off road before being removed from it.
+
+11/03/13  7 hours
+	
+	Design: Determine how to manage Light handling two sets of roads and cars. - 2 hours
+	Coding & Debugging: Implemented TimeServer to manage agents.  Continued Implementation of Light.  Fixed TEST files to account for some Design changes. - 2 hours
+	Bugs: Cars were not advancing to the next road when reaching the end of current road, instead they were wrapping around to the beginning of the current road again. Cars were slowing down/stopping when they should not be because distance to end of road was not being added into distance to object calculation. - 3 hours
+
+11/04/13 - 0.5 Hours
+
+	Coding & Debugging: 0.5 hours - Filled out rest of control menu.
+
+
+Release 3
+
+11/7/13 ï¿½ 3 hours
+
+	Design:
+	Coding & Debugging: 1.5 hours - Added Traffic lights into the model.  
+	Bugs: 1.5 hours - Cars will sometime go through each other.  Visualization is not working correctly for alternating roads.
+
+	
+11/10/13 ï¿½ 4 Hours
+	Design: 3 hours ï¿½ changed property bag from global variable to singleton.  Added timeserver to propertybag.  Looked into other possible patterns to use in refactoring the code.
+	Coding & Debugging: 1 hour - Implemented singleton property bag design.
+	Bugs: 
+
+
+Final Release
+
+11/14/13 – 3 hours
+
+	Design – 1 hour – Implement Static Factory Methods for Car, Light & Road.  Introduce Intersection, Vehicle, RoadEnd & Light Interfaces.  
+	Coding & Debugging – 2 horus - Refactor classes to use new interfaces
+
+11/15/13 – 4 hours 
+	
+
+	Coding & Debugging – 1 hour – Implement static factory for sink/source.
+	Bugs: 3 hours - Cars stayed in intersections way too long - pulling data from previous road instead of intersection.  Rendering of roads in alternating pattern was not working.  Intersections weren't being assigned in reverse order, roads were rendering too long.

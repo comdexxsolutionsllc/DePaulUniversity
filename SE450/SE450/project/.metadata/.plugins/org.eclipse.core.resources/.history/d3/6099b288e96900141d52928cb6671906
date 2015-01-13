@@ -1,0 +1,25 @@
+
+//**********************************************************
+// Assignment: Final Project - SE450
+//
+// Author: Joshua S Abbott <joshuastevenabbott@gmail.com>
+//
+// File: Agent.java
+// 
+// Date: 
+//
+// Change Log:  
+//
+// Notes:  
+//*********************************************************
+
+
+package project.model;
+
+/**
+ * Interface for active model objects.
+ * + SE450 Source
+ */
+public interface Agent {
+	public void run(double time);
+}

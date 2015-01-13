@@ -1,0 +1,9 @@
+package project.data;
+
+public interface Light {
+	// TODO
+	/*
+	 * 
+	 */
+
+}
